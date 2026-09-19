@@ -20,3 +20,26 @@ The workflow is designed to:
 - Store the results in Google Sheets
 - Generate an Excel report
 - Automatically email the processed results
+## Solution Overview
+
+This project automates the end-to-end processing of customer feedback using a workflow automation platform and an AI model.
+
+The workflow takes a CSV file containing customer feedback, parses and extracts the feedback entries, sends them to an AI model for analysis, prepares the results in a structured format, and delivers the final output through Google Sheets, Excel, and email.
+
+### Workflow Flow
+
+CSV Upload  
+↓  
+Parse CSV  
+↓  
+Extract Feedback  
+↓  
+AI Feedback Analysis  
+↓  
+Prepare Structured Results  
+↓  
+Write Results to Google Sheets  
+↓  
+Generate Excel File  
+↓  
+Email Results
