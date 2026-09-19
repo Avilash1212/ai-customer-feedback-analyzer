@@ -64,19 +64,5 @@ Write Results to Google Sheets
     ↓
 Build Excel File
     ↓
-Email Results
-## Business Impact
+Email Results '''
 
-The workflow reduces the manual effort required to process and distribute customer feedback.
-
-### Key Business Benefits
-
-- **Reduced manual processing:** Automates CSV parsing, feedback analysis, spreadsheet preparation, Excel generation, and email distribution.
-- **Faster feedback review:** Processes batches of feedback automatically instead of requiring manual review of each entry.
-- **Consistent first-pass analysis:** Applies the same AI analysis process across feedback entries.
-- **Faster stakeholder access:** Results are written to Google Sheets, exported to Excel, and distributed by email without additional manual preparation.
-- **Reusable workflow:** The same workflow can be reused for recurring customer feedback-processing tasks.
-
-### Business Use Case
-
-A product or customer experience team can upload a batch of customer feedback and automatically receive structured analysis that can be reviewed and shared with stakeholders.
