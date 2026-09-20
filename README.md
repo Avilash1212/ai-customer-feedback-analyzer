@@ -43,7 +43,6 @@ Write Results to Google Sheets
 Generate Excel File  
 ↓  
 Email Results
-## Workflow Architecture
 
 ## Workflow Architecture
 
