@@ -47,15 +47,22 @@ Email Results
 
 The workflow consists of multiple stages that automate the complete feedback-processing pipeline.
 
-## Test
-
+```markdown
 ```text
 CSV Upload
-↓
+    ↓
 Parse CSV
-↓
+    ↓
 Extract Feedback
-↓
+    ↓
 Analyze Feedback
-↓
+    │
+    └── OpenAI Chat Model
+    ↓
+Prepare Row
+    ↓
+Write Results to Google Sheets
+    ↓
+Build Excel File
+    ↓
 Email Results
