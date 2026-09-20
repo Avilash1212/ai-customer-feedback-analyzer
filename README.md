@@ -45,29 +45,35 @@ Generate Excel File
 Email Results
 ## Workflow Architecture
 
-The workflow consists of multiple stages that automate the complete feedback-processing pipeline.
+## Workflow Architecture
 
-```markdown
-```text
-CSV Upload
-    ↓
-Parse CSV
-    ↓
-Extract Feedback
-    ↓
-Analyze Feedback
-    │
-    └── OpenAI Chat Model
-    ↓
-Prepare Row
-    ↓
-Write Results to Google Sheets
-    ↓
-Build Excel File
-    ↓
-Email Results
+The workflow is divided into several stages:
 
-## Business Impact
+1. **CSV Upload**  
+   The workflow receives a CSV file containing customer feedback.
+
+2. **Parse CSV**  
+   The uploaded CSV file is parsed into individual records.
+
+3. **Extract Feedback**  
+   The relevant feedback information is extracted from each record.
+
+4. **Analyze Feedback**  
+   Each feedback entry is analyzed using an OpenAI chat model.
+
+5. **Prepare Row**  
+   The analysis results are formatted into a structured row.
+
+6. **Write Results to Google Sheets**  
+   The processed results are stored in Google Sheets.
+
+7. **Build Excel File**  
+   The processed data is converted into an Excel file.
+
+8. **Email Results**  
+   The generated results are automatically delivered through email.
+
+   ## Business Impact
 
 The workflow reduces the manual effort required to process and distribute customer feedback.
 
@@ -82,3 +88,4 @@ The workflow reduces the manual effort required to process and distribute custom
 ### Business Use Case
 
 A product or customer experience team can upload a batch of customer feedback and automatically receive structured analysis that can be reviewed and shared with stakeholders.
+
