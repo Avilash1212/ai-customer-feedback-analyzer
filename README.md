@@ -88,4 +88,45 @@ The workflow reduces the manual effort required to process and distribute custom
 ### Business Use Case
 
 A product or customer experience team can upload a batch of customer feedback and automatically receive structured analysis that can be reviewed and shared with stakeholders.
+## Key Features
 
+- **CSV-based feedback ingestion:** Accepts customer feedback in CSV format.
+- **AI-powered analysis:** Uses an OpenAI chat model to analyze customer feedback.
+- **Structured output:** Converts AI analysis into structured rows for easier processing.
+- **Google Sheets integration:** Automatically stores processed feedback in Google Sheets.
+- **Excel report generation:** Creates an Excel file containing the processed results.
+- **Automated email delivery:** Sends the generated results through email.
+- **End-to-end automation:** Connects data ingestion, AI analysis, storage, reporting, and delivery into a single workflow.
+
+## Tech Stack
+
+- **Workflow Automation:** n8n
+- **AI Model:** OpenAI Chat Model
+- **Data Input:** CSV
+- **Data Storage:** Google Sheets
+- **Report Generation:** Excel
+- **Email Automation:** Email
+
+## Example Input & Output
+
+### Input
+
+The workflow accepts a CSV file containing customer feedback records.
+
+Example:
+
+| Customer | Feedback |
+|---|---|
+| Customer 1 | The installation process was smooth and the support team was helpful. |
+| Customer 2 | The product is useful, but the response time from support could be improved. |
+| Customer 3 | I had difficulty getting my issue resolved. |
+
+### Output
+
+The workflow processes the feedback using an AI model and prepares the results in a structured format.
+
+The processed results are then:
+
+- Stored in Google Sheets
+- Generated as an Excel file
+- Delivered through email
